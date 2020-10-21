@@ -2,7 +2,6 @@ package com.example.flickrapp.di
 
 import com.example.flickrapp.App
 import dagger.Component
-import retrofit2.Retrofit
 import javax.inject.Singleton
 
 @Component(modules = [RetrofitModule::class])
@@ -21,4 +20,5 @@ interface AppComponent {
 //    fun provideRetrofit(): Retrofit
 
     fun inject(app: App)
+
 }
